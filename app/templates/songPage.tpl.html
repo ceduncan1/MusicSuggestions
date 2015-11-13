@@ -1,0 +1,31 @@
+<h3>{{ songPage.artist }} - {{ songPage.name }}</h3>
+<p>Suggested by {{ songPage.suggested }}</p>
+<a href="#/edit/{{ songPage.objectId }}">Edit</a>
+<a href="#" ng-click="deleteMe(songPage)">Delete</a>
+<br>
+<button ng-click="search(songPage.artist, songPage.name)">Search SoundCloud</button>
+
+<hr>
+
+<div class="audio" ng-show="audio">
+  <audio controls="controls" src="{{ audio }}" autoplay></audio>
+  <span>Playing: {{ playing.title }}</span>
+</div>
+
+<ul class="small-block-grid-3">
+  <li class="track" ng-repeat="song in songs" ng-click="playMe(song)">
+    <img ng-if="song.artwork_url" ng-src="{{ song.artwork_url }}">
+    <img ng-if="!song.artwork_url" src="http://placehold.it/100x100">
+    <p class="trackInfo">{{ song.title }}</p>
+  </li>
+</ul>
+
+
+
+
+
+<!-- button with an ng-click=method attached to scope in controller (takes data)
+have to pass back in template -->
+
+
+<!--  ng-repeat="song in songPage" -->

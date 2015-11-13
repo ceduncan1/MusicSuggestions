@@ -1,0 +1,32 @@
+// Put any @imports here
+// See Readme for a list of supported ones
+@import "foundation";
+
+body {
+  background: white;
+  position: relative;
+  color: black;
+  text-align: center;
+
+  a {
+    color: black;
+    font-weight: bold;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  button {
+    background-color: black;
+  }
+}
+
+.songList {
+  text-align: left;
+}
+
+.container {
+  width: 600px;
+  margin: 20px auto;
+}

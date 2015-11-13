@@ -1,0 +1,9 @@
+<div class="songList">
+  <h3>Here are some songs</h3>
+
+  <ul>
+    <li ng-repeat="song in songs">
+      <a href="#/song/{{ song.objectId }}">{{ song.name }}</a> by {{ song.artist }} was suggested by {{ song.suggested }}.
+    </li>
+  </ul>
+</div>
