@@ -1,7 +1,8 @@
 <h3>{{ songPage.artist }} - {{ songPage.name }}</h3>
 <p>Suggested by {{ songPage.suggested }}</p>
-<a href="#/edit/{{ songPage.objectId }}">Edit</a>
-<a href="#" ng-click="deleteMe(songPage)">Delete</a>
+<a class="change" href="#/edit/{{ songPage.objectId }}">Edit</a>
+<a class="change" href="#" ng-click="deleteMe(songPage)">Delete</a>
+<br>
 <br>
 <button ng-click="search(songPage.artist, songPage.name)">Search SoundCloud</button>
 

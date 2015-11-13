@@ -6398,10 +6398,15 @@ body {
   body ul {
     list-style-type: none; }
   body button {
-    background-color: black; }
+    background-color: black;
+    border-radius: 10px; }
 
 .songList {
   text-align: left; }
+
+.change {
+  padding: 0 5px;
+  margin: 1px solid grey; }
 
 .container {
   width: 600px;
